@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Credit Approval Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📖 About This Project</h1>
+        <p>This web app predicts whether a user will be approved for credit based on their demographic and financial inputs.</p>
+
+        <h3>🔍 How it works?</h3>
+        <ul>
+            <li>It takes inputs like age, job, marital status, education, balance, and other financial details.</li>
+            <li>The data is processed and sent to a trained machine learning model.</li>
+            <li>The model predicts whether the user's credit is likely to be <b>Approved</b> or <b>Not Approved</b>.</li>
+        </ul>
+
+        <p>💡 This tool is built using Python, Pandas, Scikit-learn, and Flask, and designed for learning purposes.</p>
+
+        <div class="links">
+            <a href="{{ url_for('home') }}">Home</a> |
+            <a href="{{ url_for('about') }}">About</a> |
+            <a href="{{ url_for('contact') }}">Contact</a> |
+            <a href="{{ url_for('history') }}">History</a>
+        </div>
+    </div>
+</body>
+</html>

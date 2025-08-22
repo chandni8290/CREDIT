@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Approval Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>💳 Credit Approval Predictor</h1>
+
+        <form action="{{ url_for('predict') }}" method="post">
+            <label>Age:</label>
+            <input type="number" name="age" required>
+
+            <label>Job:</label>
+            <select name="job" required>
+                <option value="unemployed">Unemployed</option>
+                <option value="services">Services</option>
+                <option value="management">Management</option>
+                <option value="blue-collar">Blue Collar</option>
+            </select>
+
+            <label>Marital Status:</label>
+            <select name="marital" required>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+            </select>
+
+            <label>Education:</label>
+            <select name="education" required>
+                <option value="primary">Primary</option>
+                <option value="secondary">Secondary</option>
+                <option value="tertiary">Tertiary</option>
+            </select>
+
+            <label>Balance:</label>
+            <input type="number" name="balance" required>
+
+            <label>Housing Loan:</label>
+            <select name="housing" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label>Call Duration (sec):</label>
+            <input type="number" name="duration" required>
+
+            <label>Campaign Contacts:</label>
+            <input type="number" name="campaign" required>
+
+            <button type="submit">🔍 Predict</button>
+        </form>
+
+        <div class="links">
+            <a href="{{ url_for('about') }}">About</a> |
+            <a href="{{ url_for('contact') }}">Contact</a> |
+            <a href="{{ url_for('history') }}">History</a>
+        </div>
+    </div>
+</body>
+</html>

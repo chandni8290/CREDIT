@@ -1,0 +1,6 @@
+age,job,marital,education,balance,housing,duration,campaign,result,confidence,date
+35,3,1,2,1200.0,1,200,1234569876,Not Approved,96.0,2025-08-03 22:35:25
+35,management,married,tertiary,1200,yes,200,1234569876,Not Approved
+35,unemployed,single,primary,1200,yes,200,1234569876,Not Approved
+35,unemployed,single,primary,1200,yes,200,1234569876,Not Approved
+35,unemployed,single,primary,1200,yes,200,1234569876,Not Approved

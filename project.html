@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Prediction Result</h1>
+
+        {% if prediction %}
+            <div class="result-box">
+                <p><strong>Credit Status:</strong> {{ prediction }}</p>
+            </div>
+        {% else %}
+            <p style="color: red;">❌ Unable to predict. Please check your input.</p>
+        {% endif %}
+
+        <div class="links">
+            <a href="{{ url_for('home') }}">Home</a> |
+            <a href="{{ url_for('about') }}">About</a> |
+            <a href="{{ url_for('contact') }}">Contact</a> |
+            <a href="{{ url_for('history') }}">History</a>
+        </div>
+    </div>
+</body>
+</html>
